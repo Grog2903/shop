@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(productForm) }}
+    {{ form_widget(productForm) }}
+    <button type="submit" class="btn btn-success">Обновить</button>
+    {{ form_end(productForm) }}
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+
