@@ -34,6 +34,7 @@ class CartController extends AbstractController
      */
     public function index(CartRepository $repository): Response
     {
+        dd($repository);
         return $this->render('cart/index.html.twig', [
             'products' => $repository->findBySession($this->session->getId())
         ]);
