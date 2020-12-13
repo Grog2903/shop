@@ -21,7 +21,6 @@ class ProductController extends AbstractController
      */
     public function allProducts(ProductRepository $productRepository, CategoryRender $categoryRender): Response
     {
-        dd($categoryRender->renderE());
         return $this->render('admin/product/index.html.twig', [
             'products' => $productRepository->findAll()
         ]);
